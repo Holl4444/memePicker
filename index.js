@@ -89,7 +89,7 @@ function renderCat() {
   memeModalInner.innerHTML = `
         <img 
         class="cat-img" 
-        src="./images/${catObject.image}"
+        src="./Images/${catObject.image}"
         alt="${catObject.alt}"
         >
         `;
@@ -107,7 +107,7 @@ function renderMatchingCats() {
     innerHTMLString += `
         <img 
             class='cat-img'
-            src="./images/${cat.image}"
+            src="./Images/${cat.image}"
             alt="${cat.alt}"
             width="150"
             height="150"
