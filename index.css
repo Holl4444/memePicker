@@ -154,13 +154,16 @@ input[type='radio'] {
     2px 2px 4px #f5e5e1;
 }
 
+/* .get-image-btn:hover,
+.get-image-btn:active {
+} */
+
 /* modal */
 
 .meme-modal {
   display: none; /*flex when displayed*/
   position: fixed;
   margin: auto;
-  top: 15%;
   left: 0;
   right: 0;
   align-items: center;
@@ -203,4 +206,16 @@ input[type='radio'] {
   color: white;
   background-color: #bd301d;
   border: 2px solid #bd301d;
+}
+
+@media (max-width: 768px) {
+  .meme-modal {
+    top: 2rem; /* Mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .meme-modal {
+    top: 8rem; /* Desktop */
+  }
 }
