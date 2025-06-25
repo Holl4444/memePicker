@@ -1,7 +1,10 @@
-import {defineConfig} from "vite"
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [
-		
-	]
-})
+  plugins: [],
+  base: './',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
+});
