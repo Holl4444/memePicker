@@ -1,4 +1,4 @@
-import { catsData } from '/data.js';
+import { catsData } from './data.js';
 
 const emotionRadios = document.getElementById('emotion-radios');
 const getImageBtn = document.getElementById('get-image-btn');
@@ -89,7 +89,7 @@ function renderCat() {
   memeModalInner.innerHTML = `
         <img 
         class="cat-img" 
-        src="/images/${catObject.image}"
+        src="./images/${catObject.image}"
         alt="${catObject.alt}"
         >
         `;
@@ -107,7 +107,7 @@ function renderMatchingCats() {
     innerHTMLString += `
         <img 
             class='cat-img'
-            src="/images/${cat.image}"
+            src="./images/${cat.image}"
             alt="${cat.alt}"
             width="150"
             height="150"
