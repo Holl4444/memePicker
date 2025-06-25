@@ -158,9 +158,9 @@ input[type='radio'] {
 
 .meme-modal {
   display: none; /*flex when displayed*/
-  position: absolute;
+  position: fixed;
   margin: auto;
-  top: 150px;
+  top: 15%;
   left: 0;
   right: 0;
   align-items: center;
@@ -168,7 +168,7 @@ input[type='radio'] {
   border: 1.3px solid #bcbcbc;
   border-radius: 5px;
   width: 420px;
-  height: 70vh;
+  max-height: 70vh;
   min-height: fit-content;
   background-color: #fff0ee;
   box-shadow: 3px 3px 4px #8a767d, 3px 3px 4px #8b7a80,
@@ -178,8 +178,7 @@ input[type='radio'] {
 .meme-modal-inner {
   display: none;
   width: 100%;
-  padding: 3rem 0.5rem;
-  margin-bottom: 2rem;
+  padding: 2rem 0.5rem;
 }
 
 .cat-img {
