@@ -94,7 +94,10 @@ function renderCat() {
         >
         `;
   memeModal.style.display = 'flex';
-  memeModalInner.style.display = 'flex';
+  memeModalInner.setAttribute(
+    'style',
+    'display: flex; padding: 2rem 1rem;'
+  );
   spacer.style.height = '8rem';
   document.body.style.paddingBottom = '8rem';
   main.style.visibility = 'hidden';
@@ -109,19 +112,14 @@ function renderMatchingCats() {
             class='cat-img'
             src="/images/${cat.image}"
             alt="${cat.alt}"
-            width="150"
-            height="150"
         >`;
   });
   memeModalInner.innerHTML = innerHTMLString;
   memeModalInner.setAttribute(
     'style',
-    'padding: 3rem 0.5rem; display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; align-items: center;'
+    'padding: 2rem 1rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; align-items: center;'
   );
-  memeModal.setAttribute(
-    'style',
-    'display: flex; margin-bottom: 2rem;'
-  );
+  memeModal.setAttribute('style', 'display: flex;');
   main.style.visibility = 'hidden';
   spacer.style.height = '8rem';
   document.body.style.paddingBottom = '8rem';
